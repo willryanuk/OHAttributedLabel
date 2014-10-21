@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 		      your complex `NSAttributedStrings` (containing various/mixed styles) very easily.
 		DESC
 		
-  s.homepage = 'https://github.com/AliSoftware/OHAttributedLabel'
+  s.homepage = 'https://github.com/willryanuk/OHAttributedLabel'
   s.author   = { 'AliSoftware' => 'olivier.halligon+ae@gmail.com' }
   s.source   = { :git => 'git@github.com:willryanuk/OHAttributedLabel.git', :tag => s.version.to_s }
 
