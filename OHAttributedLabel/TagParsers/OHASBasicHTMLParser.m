@@ -76,7 +76,7 @@
             
             ^NSAttributedString*(NSAttributedString* str, NSTextCheckingResult* match)
             {
-                NSRange textRange = [match rangeAtIndex:1];
+                NSRange textRange = [match rangeAtIndex:0];
                 if (textRange.length>0)
                 {
                     NSMutableAttributedString* foundString = [[NSMutableAttributedString alloc] initWithString:@"\n"];
