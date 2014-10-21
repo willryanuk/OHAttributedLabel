@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'OHAttributedLabel'
-  s.version  = '3.5.4'
+  s.version  = '3.5.5'
   s.license  = { :type => 'MIT', :file => 'OHAttributedLabel/LICENSE'}
   s.platform = :ios
   s.summary  = 'UILabel that supports NSAttributedString.'
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 		
   s.homepage = 'https://github.com/AliSoftware/OHAttributedLabel'
   s.author   = { 'AliSoftware' => 'olivier.halligon+ae@gmail.com' }
-  s.source   = { :git => 'https://github.com/AliSoftware/OHAttributedLabel.git', :tag => s.version.to_s }
+  s.source   = { :git => 'git@github.com:willryanuk/OHAttributedLabel.git', :tag => s.version.to_s }
 
   s.source_files = 'OHAttributedLabel/Source/*.{h,m}', 'OHAttributedLabel/PrivateUtils/*.{h,m}', 'OHAttributedLabel/TagParsers/*.{h,m}'
   s.public_header_files = 'OHAttributedLabel/Source/*.h', 'OHAttributedLabel/TagParsers/*.h'
