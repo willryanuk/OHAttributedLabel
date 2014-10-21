@@ -76,6 +76,17 @@
             
             ^NSAttributedString*(NSAttributedString* str, NSTextCheckingResult* match)
             {
+                NSRange textRange = [match rangeAtIndex:1];
+                if (textRange.length>0)
+                {
+                    NSMutableAttributedString* foundString = [[NSMutableAttributedString alloc] initWithString:@"\n"];
+                    return foundString;
+                }
+                return nil;
+            }, @"<br />",
+            
+            ^NSAttributedString*(NSAttributedString* str, NSTextCheckingResult* match)
+            {
                 NSRange fontNameRange = [match rangeAtIndex:2];
                 NSRange fontSizeRange = [match rangeAtIndex:4];
                 NSRange textRange = [match rangeAtIndex:5];
